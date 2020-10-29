@@ -1,0 +1,25 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.navbar {
+  border-bottom: 1px solid $lightGrey;
+
+  &__container {
+    @include flex;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  &__link {
+    padding: 10px;
+    font-family: $menuFont;
+    color: $darkGrey;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+}
+
+.active {
+  color: $lightGreen;
+}
