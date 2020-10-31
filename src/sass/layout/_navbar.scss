@@ -4,22 +4,76 @@
 .navbar {
   border-bottom: 1px solid $lightGrey;
 
+  &__logo {
+    height: 50px;
+    width: 50px;
+  }
+
   &__container {
     @include flex;
     margin: 0 auto;
     width: 80%;
   }
 
+  &__links {
+    display: flex;
+  }
+
   &__link {
-    padding: 10px;
+    padding: 15px 8px;
     font-family: $menuFont;
     color: $darkGrey;
     font-weight: 600;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
+  }
+
+  &__link:hover {
+    color: $lightGreen;
+  }
+
+  &__dropdown {
+    display: block;
+  }
+
+  &__dropdownContent {
+    position: absolute;
+    display: none;
+    border: 1px solid $lightGrey;
+  }
+
+  &__dropdown:hover &__dropdownContent {
+    flex-direction: column;
+    display: block !important;
+  }
+
+  &__hamburger {
+    display: none;
+  }
+
+  &__hamburgerIcon {
+    font-size: 32px;
+    color: $lightGreen;
+    cursor: pointer;
+  }
+
+  &__hamburgerIcon:hover {
+    color: $darkGreen;
   }
 }
 
 .active {
-  color: $lightGreen;
+  color: $darkGreen;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    &__links {
+      display: none;
+    }
+
+    &__hamburger {
+      display: block;
+    }
+  }
 }
