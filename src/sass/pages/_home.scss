@@ -1,0 +1,19 @@
+.home {
+  &__logoContainer {
+    text-align: center;
+    margin: 80px auto;
+  }
+
+  &__title {
+    font-family: $titleFont;
+    font-size: 42px;
+    padding-bottom: 20px;
+    color: $darkGreen;
+  }
+
+  &__featured {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
