@@ -45,6 +45,7 @@
   &__dropdown:hover &__dropdownContent {
     flex-direction: column;
     display: block !important;
+    background-color: white;
   }
 
   &__hamburger {

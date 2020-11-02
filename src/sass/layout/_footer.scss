@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  width: 60%;
+  padding-top: 100px;
+  margin: 40px auto;
+  justify-content: space-between;
+  font-size: 32px;
+
+  &__icon {
+    font-size: 48px;
+    cursor: pointer;
+  }
+}
