@@ -1,13 +1,17 @@
 .footer {
+  margin-top: 100px;
   display: flex;
-  width: 60%;
-  padding-top: 100px;
-  margin: 40px auto;
   justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+  background-color: $lightGrey;
+  font-family: $textFont;
+  color: $darkGreen;
   font-size: 32px;
 
   &__icon {
-    font-size: 48px;
+    margin: 0 20px;
+    font-size: 42px;
     cursor: pointer;
   }
 }

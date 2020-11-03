@@ -5,7 +5,7 @@ import {featuredClient} from '../client';
 import SingleFeatured from '../components/SingleFeatured';
 import AboutImg from '../images/aboutImage.jpg';
 import Footer from '../components/Footer';
-
+import ContinentCart from '../components/ContinentCart';
 function Home() {
 
     const [featured,setFeatured] = useState(null);
@@ -16,8 +16,6 @@ function Home() {
         }).catch(console.error);
     },[]);
 
-
-    console.log(featured);
     return (
         <div className="home">
             <Navbar />
@@ -26,7 +24,7 @@ function Home() {
             </div>
             <div className="home__featured">
                 <div className="home__featuredContainer">
-                <h1 className="home__title">Featured posts:</h1>
+                {/* <h1 className="home__title">Featured posts:</h1> */}
                 {
                     featured ? featured.map((singleFeatured)=> 
                     <SingleFeatured key={singleFeatured.fields.id} 
@@ -36,6 +34,17 @@ function Home() {
                     description={singleFeatured.fields.titleDescription}/>
                     ) : "Loading..."
                 }
+
+                <div className="home__continents">
+                    <div className="home__continentsCol">
+                        <ContinentCart name="europe"/>
+                        <ContinentCart name="africa"/>
+                    </div>
+                    <div className="home__continentsCol">
+                        <ContinentCart name="asia"/>
+                        <ContinentCart name="oceania"/>
+                    </div>
+                </div>
                 </div>
                 <div className="home__info">
                     <div className="home__about">

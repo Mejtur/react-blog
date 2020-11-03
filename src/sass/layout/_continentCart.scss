@@ -1,0 +1,46 @@
+.continentCart {
+  flex: 0.5;
+  height: 150px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+  &__text {
+    text-transform: uppercase;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 60%;
+    font-family: $menuFont;
+    font-weight: 600;
+    margin: 50px auto;
+  }
+}
+
+.continentCart__europe {
+  background-image: url("../../images/europe.jpg");
+  margin-right: 10px;
+}
+
+.continentCart__africa {
+  background-image: url("../../images/africa.jpg");
+  margin-left: 10px;
+}
+
+.continentCart__asia {
+  margin-right: 10px;
+  background-image: url("../../images/asia.jpg");
+}
+
+.continentCart__oceania {
+  background-image: url("../../images/oceania.jpg");
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .continentCart {
+    flex: 1;
+    margin: 20px 10px !important;
+  }
+}
