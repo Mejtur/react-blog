@@ -29,11 +29,12 @@
   }
 
   &__links {
-    font-family: $menuFont;
     color: $darkGrey;
-    font-weight: 600;
   }
   &__link {
+    font-weight: 600;
+    font-family: $menuFont;
+    color: $darkGrey;
     padding: 20px;
   }
 

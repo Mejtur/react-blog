@@ -2,6 +2,7 @@
   &__logoContainer {
     text-align: center;
     margin: 0 auto;
+    background-color: #fafafa;
   }
 
   &__title {
@@ -19,6 +20,10 @@
     display: flex;
   }
 
+  &__logoContainer {
+    border-bottom: 1px solid $lightGrey;
+  }
+
   &__featuredContainer {
     // display: flex;
     flex: 0.7;
@@ -28,6 +33,7 @@
 
   &__continents {
     width: 100%;
+    padding-top: 100px;
     align-content: space-between;
   }
   &__continentsCol {
@@ -52,6 +58,14 @@
     color: $darkGreen;
     cursor: pointer;
   }
+
+  &__sidebarTitle {
+    font-family: $titleFont;
+    color: $darkGreen;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -72,7 +86,9 @@
     }
   }
 }
-
+hr {
+  color: $lightGrey;
+}
 @media (max-width: 600px) {
   .home {
     &__continentsCol {

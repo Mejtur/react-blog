@@ -24,7 +24,6 @@ function Home() {
             </div>
             <div className="home__featured">
                 <div className="home__featuredContainer">
-                {/* <h1 className="home__title">Featured posts:</h1> */}
                 {
                     featured ? featured.map((singleFeatured)=> 
                     <SingleFeatured key={singleFeatured.fields.id} 
@@ -36,6 +35,7 @@ function Home() {
                 }
 
                 <div className="home__continents">
+                    <p className="home__title">CHECK OUT MY ADVENTURES:</p>
                     <div className="home__continentsCol">
                         <ContinentCart name="europe"/>
                         <ContinentCart name="africa"/>
@@ -47,6 +47,7 @@ function Home() {
                 </div>
                 </div>
                 <div className="home__info">
+                    <p className="home__sidebarTitle">GET TO KNOW ME</p>
                     <div className="home__about">
                         <img src={AboutImg} alt="about"/>
                         <p className="home__text">Hello, im Mejtur, i love to travel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, molestias pariatur laudantium culpa eaque facere blanditiis et praesentium animi, atque labore quisquam ipsam officia corporis assumenda similique exercitationem? Facere, odio.</p>
